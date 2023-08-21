@@ -66,7 +66,7 @@ function App() {
                   email={userData?.email}
                   tlf={userData?.phone}
                 />
-                <p>Location: {userData.location.street.number} {userData.location.street.name}, {userData.location.city}, {userData.location.state}, {userData.location.country}</p>
+                {/* <p>Location: {userData.location.street.number} {userData.location.street.name}, {userData.location.city}, {userData.location.state}, {userData.location.country}</p> */}
                 <div className="buttons">
                   <ButtonMessage title="Mensaje" />
                   <ButtonOutline title="Contacto" />
