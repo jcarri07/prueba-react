@@ -62,15 +62,12 @@ function App() {
                     userData?.name.last
                   }
                 />
-                <div className="text-center mt3">
-                <h4>Direccion: {userData.location.street.number}  {userData.location.street.name} {userData.location.city}, {userData.location.state}, {userData.location.country}</h4>
-                </div>
                 <ListData
                   genero={userData?.gender}
                   email={userData?.email}
                   tlf={userData?.phone}
+                  direccion={userData?.location.street.number +" "+ userData?.location.street.name+" "+userData?.location.city+" "+userData?.location.state+" "+userData?.location.country}
                 />
-                {/* <p>Location: {userData.location.street.number} {userData.location.street.name}, {userData.location.city}, {userData.location.state}, {userData.location.country}</p> */}
                 <div className="buttons">
                   <ButtonMessage title="Mensaje" />
                   <ButtonOutline title="Contacto" />
