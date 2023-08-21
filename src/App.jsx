@@ -52,6 +52,7 @@ function App() {
             <div className="card p-3 py-4 card-custom">
               <UserFoto src={userData?.picture.large} />
               <div className="text-center mt-3">
+                
                 <NameLabel
                   name={
                     userData?.name.title +
@@ -61,6 +62,9 @@ function App() {
                     userData?.name.last
                   }
                 />
+                <div className="text-center mt3">
+                <h4>Direccion: {userData.location.street.number}  {userData.location.street.name} {userData.location.city}, {userData.location.state}, {userData.location.country}</h4>
+                </div>
                 <ListData
                   genero={userData?.gender}
                   email={userData?.email}
@@ -91,4 +95,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
